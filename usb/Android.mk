@@ -16,8 +16,6 @@ LOCAL_SHARED_LIBRARIES := \
     libbase \
     libcutils \
     libhidlbase \
-    libhidltransport \
-    libhwbinder \
     libutils \
     libhardware \
     android.hardware.usb@1.0
