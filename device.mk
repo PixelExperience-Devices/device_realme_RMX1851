@@ -19,7 +19,3 @@ $(call inherit-product, device/realme/sdm710-common/sdm710.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# Input
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/touchpanel.kl:system/usr/keylayout/touchpanel.kl
