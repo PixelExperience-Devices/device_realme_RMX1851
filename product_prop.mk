@@ -24,6 +24,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
    persist.camera.HAL3.enabled=1
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+   ro.charger.enable_suspend=true
+
 # CNE
 PRODUCT_PRODUCT_PROPERTIES += \
    persist.vendor.cne.feature=1
