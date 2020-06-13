@@ -30,8 +30,6 @@
 #include <utils/Log.h>
 #include <utils/Trace.h>
 
-#include "disp-power/DisplayLowPower.h"
-
 namespace aidl {
 namespace google {
 namespace hardware {
@@ -43,9 +41,8 @@ constexpr char kPowerHalStateProp[] = "vendor.powerhal.state";
 constexpr char kPowerHalAudioProp[] = "vendor.powerhal.audio";
 constexpr char kPowerHalRenderingProp[] = "vendor.powerhal.rendering";
 
-Power::Power(std::shared_ptr<HintManager> hm, std::shared_ptr<DisplayLowPower> dlpw)
+Power::Power(std::shared_ptr<HintManager> hm)
     : mHintManager(hm),
-      mDisplayLowPower(dlpw),
       mInteractionHandler(nullptr),
       mVRModeOn(false),
       mSustainedPerfModeOn(false) {
@@ -122,12 +119,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             }
             break;
         case Mode::LOW_POWER:
-            mDisplayLowPower->SetDisplayLowPower(enabled);
-            if (enabled) {
-                mHintManager->DoHint(toString(type));
-            } else {
-                mHintManager->EndHint(toString(type));
-            }
             break;
         case Mode::SUSTAINED_PERFORMANCE:
             if (enabled && !mSustainedPerfModeOn) {
