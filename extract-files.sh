@@ -75,4 +75,7 @@ if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
             "${KANG}" --section "${SECTION}"
 fi
 
+BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE_COMMON}/proprietary"
+patchelf --replace-needed "libhidltransport.so" "libcutils-v29.so" "${BLOB_ROOT}/product/lib64/libdpmframework.so"
+
 "${MY_DIR}/setup-makefiles.sh"
