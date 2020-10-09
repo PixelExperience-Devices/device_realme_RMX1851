@@ -17,11 +17,13 @@ LOCAL_REQUIRED_MODULES := \
     android.hardware.light@2.0-service.realme_sdm710.rc
 
 LOCAL_SHARED_LIBRARIES := \
-    libbase \
     libhardware \
     libhidlbase \
     liblog \
-    libutils \
     android.hardware.light@2.0
+
+LOCAL_STATIC_LIBRARIES := \
+    libbase \
+    libutils
 
 include $(BUILD_EXECUTABLE)

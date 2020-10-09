@@ -13,11 +13,13 @@ LOCAL_REQUIRED_MODULES := android.hardware.usb@1.0-service.realme_sdm710.rc
 LOCAL_SRC_FILES := service.cpp Usb.cpp
 
 LOCAL_SHARED_LIBRARIES := \
-    libbase \
     libcutils \
     libhidlbase \
-    libutils \
     libhardware \
     android.hardware.usb@1.0
+
+LOCAL_STATIC_LIBRARIES := \
+    libbase \
+    libutils
 
 include $(BUILD_EXECUTABLE)
