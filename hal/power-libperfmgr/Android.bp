@@ -1,0 +1,43 @@
+cc_library_headers {
+    name: "realme_power_headers",
+    vendor_available: true,
+    export_include_dirs: ["."],
+}
+
+cc_library {
+    name: "libdisppower-realme",
+    srcs: [
+        "disp-power/DisplayLowPower.cpp",
+        "disp-power/InteractionHandler.cpp",
+    ],
+     shared_libs: [
+        "libbase",
+        "libcutils",
+        "liblog",
+        "libperfmgr",
+        "libutils",
+    ],
+}
+
+cc_binary {
+    name: "android.hardware.power-service.realme_sdm710",
+    relative_install_path: "hw",
+    init_rc: ["aidl/android.hardware.power-service.realme_sdm710.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.realme.xml"],
+    shared_libs: [
+        "android.hardware.power-ndk_platform",
+        "libbase",
+        "libcutils",
+        "liblog",
+        "libutils",
+        "libbinder_ndk",
+        "libdisppower-realme",
+        "libperfmgr",
+        "pixel-power-ext-ndk_platform",
+    ],
+    srcs: [
+        "aidl/service.cpp",
+        "aidl/Power.cpp",
+        "aidl/PowerExt.cpp",
+    ],
+}
