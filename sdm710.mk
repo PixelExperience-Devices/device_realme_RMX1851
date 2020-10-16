@@ -71,9 +71,6 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
-PRODUCT_BOOT_JARS += \
-    qcom.fmradio
-
 # fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/fstab.qcom:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/fstab.qcom
