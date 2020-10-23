@@ -36,6 +36,17 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=440
 
+# Dex2oat
+PRODUCT_PRODUCT_PROPERTIES += \
+    dalvik.vm.image-dex2oat-filter=quicken \
+    dalvik.vm.image-dex2oat-threads=8 \
+    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.dex2oat-filter=quicken \
+    dalvik.vm.dex2oat-threads=8 \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
+    dalvik.vm.boot-dex2oat-threads=8 \
+    dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+
 # FM
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.fm.use_audio_session=true
