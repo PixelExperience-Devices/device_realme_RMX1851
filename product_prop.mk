@@ -67,6 +67,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.netflix.bsp_rev=Q670-14477-1
 
+# Privapp permissions whitelisting
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log
+
 # RIL
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=22,20 \
