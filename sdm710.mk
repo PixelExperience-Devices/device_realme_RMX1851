@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhwbinder
 
-PRODUCT_COPY_FILES += \
+# PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/vintf/manifest.xml
 
 # IMS
@@ -93,10 +93,6 @@ ifeq ($(findstring Plus, $(CUSTOM_VERSION)),)
 PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service-sdm
 endif
-
-# Power
-PRODUCT_PACKAGES += \
-     android.hardware.power-service.realme-sdm710
 
 # Media
 PRODUCT_COPY_FILES += \

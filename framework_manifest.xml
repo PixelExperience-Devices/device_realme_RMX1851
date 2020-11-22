@@ -1,8 +1,4 @@
 <manifest version="1.0" type="framework">
-    <hal format="aidl">
-        <name>android.hardware.power</name>
-        <fqname>IPower/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
