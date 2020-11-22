@@ -96,7 +96,7 @@ endif
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service-sdm710
+     android.hardware.power-service.realme-sdm710
 
 # Media
 PRODUCT_COPY_FILES += \
