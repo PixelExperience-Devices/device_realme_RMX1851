@@ -1,7 +1,3 @@
-# Pixel identification
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
-
 # Adb
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # /vendor/default.prop is force-setting ro.adb.secure=1
