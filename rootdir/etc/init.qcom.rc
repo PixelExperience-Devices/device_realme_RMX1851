@@ -1,3 +1,6 @@
+on init
+    mount none /vendor/lost+found /vendor/overlay bind
+
 on late-fs
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
