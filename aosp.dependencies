@@ -6,8 +6,8 @@
     "remote": "pixel-gitlab"
   },
   {
-    "repository" : "vendor_realme_sdm710-common",
-    "target_path": "vendor/realme/sdm710-common",
+    "repository" : "vendor_realme_RMX1851",
+    "target_path": "vendor/realme/RMX1851",
     "branch": "ten",
     "remote": "pixel-devices-blobs"
   },
