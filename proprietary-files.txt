@@ -57,6 +57,17 @@ product/lib64/libdpmtcm.so
 product/lib64/libsdm-disp-apis.qti.so
 product/lib64/vendor.display.color@1.0.so
 
+# Fingerprint firmware
+oppo_product/vendor/firmware/a_fp.b00:product/vendor_overlay/29/firmware/a_fp.b00
+oppo_product/vendor/firmware/a_fp.b01:product/vendor_overlay/29/firmware/a_fp.b01
+oppo_product/vendor/firmware/a_fp.b02:product/vendor_overlay/29/firmware/a_fp.b02 
+oppo_product/vendor/firmware/a_fp.b03:product/vendor_overlay/29/firmware/a_fp.b03
+oppo_product/vendor/firmware/a_fp.b04:product/vendor_overlay/29/firmware/a_fp.b04
+oppo_product/vendor/firmware/a_fp.b05:product/vendor_overlay/29/firmware/a_fp.b05
+oppo_product/vendor/firmware/a_fp.b06:product/vendor_overlay/29/firmware/a_fp.b06
+oppo_product/vendor/firmware/a_fp.b07:product/vendor_overlay/29/firmware/a_fp.b07
+oppo_product/vendor/firmware/a_fp.mdt:product/vendor_overlay/29/firmware/a_fp.mdt
+
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
