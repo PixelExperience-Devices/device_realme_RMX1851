@@ -1,14 +1,8 @@
 [
   {
-    "repository": "packages_apps_PixelLiveWallpaper",
-    "target_path": "packages/apps/PixelLiveWallpaper",
-    "branch": "ten",
-    "remote": "pixel-gitlab"
-  },
-  {
-    "repository" : "vendor_realme_RMX1851",
+    "repository" : "vendor_realme_sdm710-common",
     "target_path": "vendor/realme/RMX1851",
-    "branch": "ten",
+    "branch": "eleven",
     "remote": "pixel-devices-blobs"
   },
   {
