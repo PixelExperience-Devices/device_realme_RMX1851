@@ -8,7 +8,7 @@
   {
     "repository": "kernel_realme_sdm710",
     "target_path": "kernel/realme/sdm710",
-    "branch": "ten"
+    "branch": "eleven"
   },
   {
     "repository": "arter97/arm64-gcc",
