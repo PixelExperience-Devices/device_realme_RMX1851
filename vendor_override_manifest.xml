@@ -1,0 +1,14 @@
+<manifest version="1.0" type="device">
+    <hal format="hidl" override="true">
+        <name>android.hardware.power</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.oppo.hardware.biometrics.face</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.qti.hardware.perf</name>
+        <transport>hwbinder</transport>
+    </hal>
+</manifest>
