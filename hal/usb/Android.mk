@@ -11,6 +11,7 @@ LOCAL_MODULE_STEM := android.hardware.usb@1.0-service
 LOCAL_SRC_FILES := service.cpp Usb.cpp
 
 LOCAL_SHARED_LIBRARIES := \
+    liblog \
     libcutils \
     libhidlbase \
     libhardware \
