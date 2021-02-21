@@ -12,3 +12,4 @@ type sysfs_scsi_devices, sysfs_type, fs_type;
 type debugfs_wlan, debugfs_type, fs_type;
 type debugfs_sched_features, debugfs_type, fs_type;
 type proc_sysctl_schedboost, proc_type, fs_type;
+type sysfs_mmc_host, fs_type, sysfs_type;
