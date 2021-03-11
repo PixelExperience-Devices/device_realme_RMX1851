@@ -69,4 +69,7 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
+BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
+patchelf --replace-needed "libhidltransport.so" "libcutils-v29.so" "${BLOB_ROOT}/product/lib64/libdpmframework.so"
+
 "${MY_DIR}/setup-makefiles.sh"

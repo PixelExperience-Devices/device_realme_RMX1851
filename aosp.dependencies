@@ -15,17 +15,5 @@
     "target_path": "prebuilts/arm64-gcc",
     "branch": "master",
     "remote": "github"
-  },
-  {
-    "repository": "AOSPA/android_device_qcom_common",
-    "target_path": "device/qcom/common",
-    "branch": "ruby",
-    "remote": "github"
-   },
-   {
-    "repository": "ThankYouMario/proprietary_vendor_qcom_common",
-    "target_path": "vendor/qcom/common",
-    "branch": "ruby",
-    "remote": "github"
-   }
+  }
 ]
