@@ -105,6 +105,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
 
+# Misc
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.controls.xml:system/etc/permissions/android.software.controls.xml
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
