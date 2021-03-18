@@ -37,8 +37,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
-# Common init scripts
+# Init scripts
 PRODUCT_PACKAGES += \
+    init.custom.rc \
     init.qcom.rc
 
 # Device-specific settings
